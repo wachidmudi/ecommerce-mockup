@@ -1,0 +1,62 @@
+/* ========================================================================
+ * Tutorial specific styling
+ *
+ * @see: css/default.css file for generic CSS
+ * ========================================================================
+ * Copyright 2016 Bootbites.com (unless otherwise stated)
+ * For license information see: http://bootbites.com/license
+ * ======================================================================== */
+/* ==================================================
+  Navbar tweaks
+  ================================================== */
+.navbar {
+  border-radius: 0 !important;
+}
+.navbar-nav {
+  margin: 0;
+}
+/* ==================================================
+  Collapse-nav styling
+  ================================================== */
+.collapse-nav:before,
+.collapse-nav:after {
+  content: " ";
+  display: table;
+}
+.collapse-nav:after {
+  clear: both;
+}
+.collapse-nav .navbar-brand,
+.collapse-nav.navbarnav > li > a {
+  padding: 15px;
+}
+.collapse-nav .collapse-item {
+  float: left !important;
+}
+.collapse-item.collapse-item-hidden {
+  /** .collapse-item-hidden is applied when item is hidden from view, could tweak this and add CSS transition effect **/
+  display: none;
+}
+.collapse-nav-target .collapse-item {
+  float: none !important;
+}
+.collapse-nav-target .dropdown-menu {
+  position: absolute !important;
+  background: white !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ccc !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175) !important;
+  right: 0 !important;
+  left: auto !important;
+  margin-top: 0 !important;
+}
+.collapse-nav-target .dropdown-menu > li > a {
+  color: #777 !important;
+}
+.collapse-nav-target .dropdown-menu > li > a:hover {
+  background-color: #f5f5f5 !important;
+}
