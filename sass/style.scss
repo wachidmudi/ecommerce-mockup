@@ -1,0 +1,232 @@
+/*
+ *    Style for Hoolder with SASS
+ */
+
+@import "bootstrap-variables";
+
+/* Mixins */
+
+//Fluid-zero
+@mixin zero{
+    color: #fff;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative !important;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+@mixin one{
+    color: #fff;
+    font-family: $fonts-reg;
+    font-size: 13px;
+}
+
+// Space
+@mixin decrease-padding{
+    margin-top: -.8em;
+    
+    a{
+          padding-bottom: -1em !important; 
+          margin-bottom: -.8em;
+    }
+    a:hover{
+          border-bottom: 4px solid $color-sky;
+          padding-bottom: 0 !important; 
+    }
+}
+
+// Fonts 
+@mixin fonts-face{
+    font-weight: normal;
+	font-style: normal;
+}
+
+/* Variables */
+
+// Fonts
+$fonts: "Helvetica", "Arial", "Times New Roman";
+$fonts-reg: "LatoRegular", $fonts;
+$fonts-light: "LatoLight", $fonts;
+$fonts-hair: "LatoHairline", $fonts;
+$fonts-bold: "LatoBold", $fonts;
+$fonts-source: "SourceSans", $fonts;
+
+// Color
+$color-cloud: #21B6C5 !important;
+$color-cloud-light: #6AD9E6 !important;
+$color-default: #fff !important;
+$color-monokai: #272822 !important;
+$color-monokai-light: #4D4F44 !important;
+$color-orchid: #5c4751 !important;
+$color-orchid-light: #795d6b !important;
+$color-scarlet: #451622 !important;
+$color-sky: #4A8AF4 !important;
+$color-steam: #efefef !important;
+
+// Spacer
+$margins:(xs: 0.5rem, sm: 1rem, md: 1.5rem, lg: 2rem, xl: 2.5rem, xxl: 3rem);
+@each $name, $value in $margins {
+    .margin-top-#{$name}{margin-top: $value;}
+    .margin-bottom-#{$name}{margin-bottom: $value}
+}
+
+$space:(top: 10px, right: 10px, bottom: 10px, left: 10px);
+@each $name, $value in $space {
+    .gap-#{$name}{margin-#{$name}: $value !important;}
+}
+
+// Style Begin
+
+@font-face {
+	font-family: 'LatoRegular';
+	src:url('../fonts/Lato-Regular.ttf') format('truetype');
+    @include fonts-face;
+}
+
+@font-face {
+	font-family: 'LatoLight';
+	src:url('../fonts/Lato-Light.ttf') format('truetype');
+	@include fonts-face;
+}
+
+@font-face {
+	font-family: 'LatoHairline';
+	src:url('../fonts/Lato-Hairline.ttf') format('truetype');
+	@include fonts-face;
+}
+
+@font-face {
+	font-family: 'LatoBold';
+	src:url('../fonts/Lato-Bold.ttf') format('truetype');
+	@include fonts-face;
+}
+
+@font-face {
+	font-family: 'SourceSans';
+	src:url('../fonts/SourceSansPro-Light.ttf')format('truetype'); 
+	@include fonts-face;
+}
+
+html, body{
+    font-family: $fonts-reg;
+}
+
+.navbar-cloud, .container-cloud{
+    color: $color-default;
+    background: $color-cloud;
+    a{
+        @include one;
+    }
+    a:hover{
+        background: $color-cloud-light;
+        border-bottom: 4px solid $color-sky;
+        margin-bottom: -4px;
+    }
+}
+
+.navbar-grey, .container-grey {
+    @include decrease-padding;    
+    background: $color-steam;
+}
+
+.navbar-monokai, .container-monokai{
+    color: $color-default;
+    background: $color-scarlet;
+}
+
+.navbar-brand{
+    font-family: $fonts-source !important;
+    font-size: 18px !important;
+}
+
+.form-group-full{
+    display: inline !important;
+}
+
+.input-group-full{
+    display: table !important;
+    .input-group-btn-full{
+        width: 1% !important;
+    }
+}
+
+.fluid-zero{
+    @include zero;
+    .content{
+        position: absolute !important;
+        top: 30%;
+        font-family: $fonts-light;
+        font-weight: bold;
+        width: 100%;
+        z-index: 5 !important;
+    }   
+    img{
+        width: 100%;
+    }
+}
+
+.content span{
+    display: block;
+}
+
+.square{
+    max-height: 350px;
+    height: 100%;
+    overflow: hidden;
+    width: auto;
+}
+
+.icon-bar{
+    background-color: $color-steam;
+}
+
+#owl-slider .item{
+    background: #fff;   
+    margin: 3px;
+    padding: 3%;
+    height: 25em;
+}
+
+#owl-slider-second .item{
+    background: #fff;   
+    margin: 3px;
+    padding: 3%;
+    height: 25em;
+}
+
+.products{
+    height: 18em;
+    img{
+        display: block;
+        width: auto;
+        margin: auto;
+        
+    }
+}
+
+.price{
+    height: 5em;
+    span, h5{
+        display: block !important;
+        font-size: 12px;
+        padding-left: 1em;
+    }
+}
+
+// Footer
+
+.list-unstyled{
+    a{
+        color: $color-steam;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $color-default;
+    }
+}
+
+
+
+
