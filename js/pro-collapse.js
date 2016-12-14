@@ -49,7 +49,7 @@ function collapseNavGetData(target) {
     collapseNavItemsNoSticky: collapseNavItemsNoSticky, // object of items within collapseNav to collapse, override with data-items="li"
     collapseNavItemsSticky:   target.find('> ' + '.' + collapseNavStickyClass), // object of  sticky items within collapseNav
     collapseNavCollapseWidth: target.data('collapse-width') || 250, // a pixel width where the collapseNav should be fully collapse ie. on mobile
-    collapseNavWidthOffset:   collapseNavWidthOffset || 30, // offset for width calculation, can be value or selectors of elements
+    collapseNavWidthOffset:   collapseNavWidthOffset || 160, // offset for width calculation, can be value or selectors of elements
     collapseNavWidth:         0 // collapseNav width based on space available
   };
 

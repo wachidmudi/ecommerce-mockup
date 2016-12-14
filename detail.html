@@ -10,39 +10,39 @@
     <link rel="stylesheet" href="css/style.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> 
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <!-- Animate Css -->
+    <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.min.css">
     <!-- Progressive Collapse -->
     <link rel="stylesheet" href="css/pro-collapse.css">
+    <!-- Bootstrap Select CSS -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
 </head>
 <body>
-  
+
    <!-- Header & Navbar-->
-   <div class="navbar navbar-fixed-top">
-     <div class="container-fluid navbar-grey hidden-xs">
-         <div class="container header-first">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Download App</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
-                <li><a href="#">View Orders</a></li>
-            </ul>
-         </div>
-     </div>
-     <div class="clearfix"></div>
-     <div class="container-fluid container-cloud">
-      <div class="container header-second">
+    <div class="navbar navbar-fixed-top">
+      <div class="product-collapse"><!-- Detail- CollapseHeader -->
+        <div class="container-fluid navbar-grey hidden-xs">
+            <div class="container header-first">
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#">Download App</a></li>
+                   <li><a href="#">Help</a></li>
+                   <li><a href="#">Login</a></li>
+                   <li><a href="#">Signup</a></li>
+                   <li><a href="#">View Orders</a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="container-fluid container-cloud">
+         <div class="container header-second">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand brand-logo first-time animated" href="#">HOOlder</a>
+          <a class="navbar-brand brand-logo first-time animated" href="index.html">HOOlder</a>
           <a class="navbar-brand brand-categories navbar-brand-collapse hidden animated" data-toggle="collapse"><i class="fa fa-bars"></i> All Categories</a>
         </div>
         <div class="navbar-collapse collapse" id="searchbar">
@@ -52,11 +52,11 @@
                  <li><a href="#">SERVICES</a></li>
              </ul>
             <div class="col-md-7 col-md-offset-1 col-sm-6 col-sm-offset-1 col-xs-12">
-             <form class="navbar-form">
+              <form class="navbar-form">
                 <div class="form-group form-group-full">
                   <div class="input-group input-group-full">
                     <input class="form-control" placeholder="Search right now...">
-                    <div class="input-group-btn input-group-btn-full">
+                    <div class="input-group-btn">
                         <button class="btn btn-default" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
@@ -64,34 +64,60 @@
                   </div>
                 </div>
               </form>
-             </div>
-             <div class="clearfix"></div>
-           </div><!-- container -->
-         </div><!--/.nav-collapse -->    
-    </div>
-   </div><!-- container-fluid -->
+            </div>
+          </div><!-- header-second -->
+        </div><!-- navbar-collapse --> 
+         </div><!-- container --> 
+        </div><!-- container-fluid -->
+    
                        
-    <div class="container-cloud header-third" id="third-collapse">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-             <ul class="nav navbar-nav" data-toggle="collapse-nav" data-target="#more-menu-1">
-                 <li class="sticky"><a href="#"><span>Electronics</span></a></li>
-                 <li><a href="#"><span>Woman Fashion</span></a></li>
-                 <li><a href="#"><span>Man Fashion</span></a></li>
-                 <li><a href="#"><span>Home Tools</span></a></li>
-                 <li><a href="#"><span>Beauty & Health</span></a></li>
-                 <li><a href="#"><span>Baby & Toys</span></a></li>
-                 <li><a href="#"><span>Sport & Travel</span></a></li>
-                 <li><a href="#"><span>Groceries, Otomotif & Media</span></a></li>
-                 <li><a href="#"><span>Hightlight</span></a></li>
-                 <li><a href="#"><span>Shop Brands</span></a></li>
-                 <li id="more-menu-1"></li>
-             </ul>
-          </div>
-        </div>
-      </div><!-- container -->
-    </div><!-- container-fluid -->
+        <div class="container-cloud header-third" id="third-collapse">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                 <ul class="nav navbar-nav" data-toggle="collapse-nav" data-target="#more-menu-1">
+                     <li class="sticky"><a href="#"><span>Electronics</span></a></li>
+                     <li><a href="#"><span>Woman Fashion</span></a></li>
+                     <li><a href="#"><span>Man Fashion</span></a></li>
+                     <li><a href="#"><span>Home Tools</span></a></li>
+                     <li><a href="#"><span>Beauty & Health</span></a></li>
+                     <li><a href="#"><span>Baby & Toys</span></a></li>
+                     <li><a href="#"><span>Sport & Travel</span></a></li>
+                     <li><a href="#"><span>Groceries, Otomotif & Media</span></a></li>
+                     <li><a href="#"><span>Hightlight</span></a></li>
+                     <li><a href="#"><span>Shop Brands</span></a></li>
+                     <li id="more-menu-1"></li>
+                 </ul>
+              </div>
+            </div>
+          </div><!-- container -->
+        </div><!-- header-third -->
+      </div><!-- Detail- CollapseHeader -->
+
+        <div class="container-cloud header-fourth" id="fourth-collapse">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <a class="btn btn-detail btn-lg btn-block" href="#">
+                  <span>Summary</span>
+                </a>
+              </div>
+              <div class="col-md-3 text-center">
+                <a class="btn btn-detail btn-lg btn-block" href="#">
+                  <span>Description</span>
+                </a>
+              </div>
+              <div class="col-md-3 text-center">
+                <a class="btn btn-detail btn-lg btn-block" href="#">
+                  <span>Reviews</span>
+                </a>
+              </div>
+              <div class="col-md-3 text-center">
+                <a class="btn btn-danger btn-lg btn-block" href="#"><span>Buy Now</span></a>
+              </div>
+            </div>
+          </div><!-- container-fluid -->
+        </div><!-- header-third -->
           
    </div><!-- navbar -->
   
@@ -99,7 +125,7 @@
   <div class="fluid-zero"></div>
 
   <!-- Breacrumbs Start -->
-  <div class="container">
+  <div class="container product-detail">
     <ul class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">Kitchen</a></li>
@@ -108,154 +134,202 @@
   </div>
   <!-- Breacrumbs End -->
 
+  <!-- Produk Start -->
+  <div class="container margin-bottom-xl">
+    <div class="row">
+      <div class="col-md-9">
+        <h2>Callista Otaru Sealware Set 7G Premium - Tosca</h2>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <div class="media-body  media-middle">
+                <a href="#"> Add to wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <i class="fa fa-share-alt"></i>
+              </div>
+              <div class="media-body  media-middle">
+                <a href="#"> Share</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-3">
+        <span>Brand : <a href="#">Calista</a></span>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="wrapper">
+          <img id="zoom_03" src="images/products/small/image1.png" data-zoom-image="images/products/large/image1.jpg"/>
+
+          <div id="gallery_01">
+           
+            <a href="#" data-image="images/products/small/image1.png" data-zoom-image="images/products/large/image1.jpg">
+              <img class="gallery-thumb" src="images/products/thumb/image1.jpg" />
+            </a>
+
+            <a href="#" data-image="images/products/small/image2.png" data-zoom-image="images/products/large/image2.jpg">
+              <img class="gallery-thumb" src="images/products/thumb/image2.jpg" />
+            </a>
+
+            <a href="#" data-image="images/products/small/image3.png" data-zoom-image="images/products/large/image3.jpg">
+              <img class="gallery-thumb" src="images/products/thumb/image3.jpg" />
+            </a>
+
+            <a href="#" data-image="images/products/small/image4.png" data-zoom-image="images/products/large/image4.jpg">
+              <img class="gallery-thumb" src="images/products/thumb/image4.jpg" />
+            </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <ul class="list-unstyled">
+          <li>Free Shipping</li>
+          <li>More Economic</li>
+          <li>Variation Size</li>
+          <li>Microwave Ready</li>
+          <li>Practical</li>
+        </ul>
+        <hr>
+          <h6>Choose Variation</h6>
+          <div class="clearfix"></div>
+          <ul class="list-unstyled thumb-product">
+            <li>
+              <a href="#"><img class="img-responsive" src="http://placehold.it/40x40" alt="Variation"></a>
+            </li>
+            <li>
+              <a href="#"><img class="img-responsive" src="http://placehold.it/40x40" alt="Variation"></a>
+            </li>
+            <li>
+              <a href="#"><img class="img-responsive" src="http://placehold.it/40x40" alt="Variation"></a>
+            </li>
+            <li>
+              <a href="#"><img class="img-responsive" src="http://placehold.it/40x40" alt="Variation"></a>
+            </li>
+          </ul>
+        <hr>
+          <h4>$ 50</h4>
+          <a href="#" class="btn btn-info btn-lg">Buy Now</a>
+
+      </div>
+      <div class="col-md-3">
+        <h5>Shipping Choice</h5>
+        <select class="selectpicker" data-style="btn-success">
+          <option>Select District</option>
+          <option>California</option>
+          <option>Nevada</option>
+          <option>Washington</option>
+        </select>
+        <hr>
+        <div>
+          <h5>Sell and Sent by Hoolder</h5>
+          <hr>
+          <div class="media">
+            <div class="media-left">
+              <i class="fa fa-shield fa-2x"></i>
+            </div>
+            <div class="media-body  media-middle">
+              Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <i class="fa fa-thumbs-o-up fa-2x"></i>
+            </div>
+            <div class="media-body  media-middle">
+              Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Produk End -->
+
   <!-- Produk Detail Start -->
   <div class="container">
     <div class="row">
-      <div class="col-md-9">
-        <h2>Callista Otaru Sealware Set 7G Premium - Violet</h2>
+      <div class="col-md-9 block-detail">
+        <h4><strong>Detail Product for Callista Otaru Sealware Set 7G Premium - Violet</strong></h4>
+        <p>Provident rem, obcaecati, voluptatibus ad numquam expedita. Nemo voluptatum, incidunt obcaecati itaque molestias eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe animi vero voluptatum doloremque dolorum officia consectetur.</p>
+        <img class="img-responsive center-block" src="http://placehold.it/370x370" alt="">
+        <h5><strong>Free BPA</strong></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit est delectus, deserunt beatae sint perspiciatis quia incidunt magni soluta labore.</p>
+        <img class="img-responsive center-block" src="http://placehold.it/370x370" alt="">
+        <h5><strong>Use in anyplace</strong></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat, mollitia deserunt velit molestias reiciendis illum quas dicta repellendus soluta harum, placeat expedita excepturi dolores laboriosam, eligendi quos nemo blanditiis.</p>
       </div>
       <div class="col-md-3">
-        <span><i class="fa "></i> <a href="#">Add to wishlist</a></span>
-        <span><i class="fa "></i> <a href="#">Share</a></span>
+        <h4><strong>Others also sees..</strong></h4>
+        
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
-      <div class="col-md-3"></div>
     </div>
   </div>
   <!-- Produk Detail End -->
         
-  <!--Categories Start-->
-  <div class="container">
-      <div class="row margin-top-xl margin-bottom-xl">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-television fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Electronic</h5></a>                    
+  <!-- Footer Section Start -->
+  <footer>  
+      <div class="container-fluid container-monokai">
+          <div class="container">
+              <div class="row margin-top-xl margin-bottom-xl">
+                  <div class="col-md-3 col-sm-6">
+                      <ul class="list-unstyled">
+                          <li class="disabled"><a href="#"><strong>HOOlder</strong></a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Careers</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Our Consumer</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                      <ul class="list-unstyled">
+                          <li><a href="#"><strong>Shopping</strong></a></li>
+                          <li><a href="#">Selling</a></li>
+                          <li><a href="#">Transaction</a></li>
+                          <li><a href="#">Refund</a></li>
+                          <li><a href="#">Adsense</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                      <ul class="list-unstyled">
+                          <li><a href="#">Help</a></li>
+                          <li><a href="#">Terms & Condition</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Resolution Center</a></li>
+                          <li><a href="#">Contacts Us</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                      <h5>What we are?</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In officia, nobis, maiores nemo hic neque sapiente cum voluptates deleniti quod libero necessitatibus dolor, velit excepturi veritatis quas sequi voluptatibus tempore.</p>
+                  </div>
               </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-umbrella fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Everyday</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-shopping-bag fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Toys & Hobbies</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-laptop fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Laptop & Accessory</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-music fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Film, Music & Games</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-motorcycle fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Otomotif</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-mobile fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Handphone & Tablet</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-futbol-o fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Sport</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-camera fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Camera, Photo & Video</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-wrench fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Tools</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-home fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Home</h5></a>                    
-              </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <div class="categories-item">
-                <i class="fa fa-apple fa-3x fa-fw pull-left"></i>
-                <a href="#"><h5>Computer & Accessory</h5></a>                    
-              </div>
-          </div>                
       </div>
-  </div>  
-  <!--Categories End-->     
-        
-<!-- Footer Section Start -->
-<footer>  
-    <div class="container-fluid container-monokai">
-        <div class="container">
-            <div class="row margin-top-xl margin-bottom-xl">
-                <div class="col-md-3 col-sm-6">
-                    <ul class="list-unstyled">
-                        <li class="disabled"><a href="#"><strong>HOOlder</strong></a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Our Consumer</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <ul class="list-unstyled">
-                        <li><a href="#"><strong>Shopping</strong></a></li>
-                        <li><a href="#">Selling</a></li>
-                        <li><a href="#">Transaction</a></li>
-                        <li><a href="#">Refund</a></li>
-                        <li><a href="#">Adsense</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <ul class="list-unstyled">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Resolution Center</a></li>
-                        <li><a href="#">Contacts Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <h5>What we are?</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In officia, nobis, maiores nemo hic neque sapiente cum voluptates deleniti quod libero necessitatibus dolor, velit excepturi veritatis quas sequi voluptatibus tempore.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer Section End -->
+  </footer>
+  <!-- Footer Section End -->
 
-<!-- Copyright Section Start -->
-<div class="container-fluid container-light">
-    <div class="row margin-top-md margin-bottom-md">
-        <p class="text-center">&copy; Copyright at HOOlder - 2016</p>
-    </div>
-</div>
-<!-- Copyright Section End -->
+  <!-- Copyright Section Start -->
+  <div class="container-fluid container-light">
+      <div class="row margin-top-md margin-bottom-md">
+          <p class="text-center">&copy; Copyright at HOOlder - 2016</p>
+      </div>
+  </div>
+  <!-- Copyright Section End -->
 
 <!--jQuery Script-->
 <!-- <script src="js/jquery-3.1.1.min.js"></script> -->
@@ -264,17 +338,17 @@
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
 <!--Bootstrap Script-->
 <script src="js/bootstrap.min.js"></script>
-<!-- Navtab hover effect -->
-<!-- <script src="http://cdn.rawgit.com/tonystar/bootstrap-hover-tabs/master/bootstrap-hover-tabs.js"></script> -->
-<script src="js/bootstrap-hover-tabs.js"></script>
 <!-- Progressive Collapse JS -->
 <script src="js/pro-collapse.js"></script>
-<!-- Slick Carousel -->
-<script src="slick/slick.js"></script>
 <!-- Custom Setting for Hoolder -->
 <script src="js/hoolder.js"></script>
 <!-- Lazy load Images -->
 <script src="js/jquery.unveil.js"></script>
+<!-- Bootstrap Select Dropdown JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+<script src="js/defaults-en_US.js"></script>
+<!-- Hover Zoom -->
+<script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
 
 </body>
 </html>
