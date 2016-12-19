@@ -69,22 +69,25 @@ $(window).scroll(function() {
      }
  });
 
-// Image Hover Zoom
-// Initiate the plugin and pass the id of the div containing gallery images
-$("#zoom_03").elevateZoom({
-  gallery:'gallery_01', 
-  cursor: 'pointer', 
-  galleryActiveClass: 'active', 
-  imageCrossfade: true,
-  zoomWindowFadeIn: 500,
-  zoomWindowFadeOut: 500,
-  lensFadeIn: 500,
-  lensFadeOut: 500
-}); 
+// Image Hover Zoom, must use another document ready function like window load to apply elevateZoom
+$(window).load(function(){  
+    //initialize after images are loaded
+      // Initiate the plugin and pass the id of the div containing gallery images
+  $("#zoom_03").elevateZoom({
+    gallery:'gallery_01', 
+    cursor: 'pointer', 
+    galleryActiveClass: 'active', 
+    imageCrossfade: true,
+    zoomWindowFadeIn: 500,
+    zoomWindowFadeOut: 500,
+    lensFadeIn: 500,
+    lensFadeOut: 500
+  }); 
 
-//pass the images to Fancybox
-$("#zoom_03").bind("click", function(e) {  
-  var ez =   $('#zoom_03').data('elevateZoom'); 
-  $.fancybox(ez.getGalleryList());
-  return false;
+  //pass the images to Fancybox
+  $("#zoom_03").bind("click", function(e) {  
+    var ez =   $('#zoom_03').data('elevateZoom'); 
+    $.fancybox(ez.getGalleryList());
+    return false;
+  });  
 });
